@@ -4,7 +4,7 @@ Architecture
 The project is built as a pure TypeScript layout resolution engine that separates core coordinate calculations from UI rendering. It takes an abstract AdSpec and SurfaceProfile, processes them through a deterministic resolution pipeline, and outputs concrete coordinates, widths, heights, and font sizes consumed by AdRenderer.tsx for DOM placement[cite: 1].
 ---------------------------------------------------
 Algorithm
-
+---------------------------------------------------
 Mode Detection: Analyzes surface aspect ratio and height constraints to categorize the canvas into wide, portrait, or balanced modes.
 Sequence and Priority Control: Preserves the original element array sequence for wide surfaces (critical for broadcast lower-thirds to prevent arbitrary reordering) while sorting by priority for standard displays.
 Iterative Downscaling: Evaluates elements through a scaling loop from 1.0 down to 0.4 to find the largest fitting size without boundary collisions.
