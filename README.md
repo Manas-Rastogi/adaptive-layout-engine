@@ -1,4 +1,5 @@
 ---------------------------------------------------
+---------------------------------------------------
 Architecture
 ---------------------------------------------------
 The project is built as a pure TypeScript layout resolution engine that separates core coordinate calculations from UI rendering. It takes an abstract AdSpec and SurfaceProfile, processes them through a deterministic resolution pipeline, and outputs concrete coordinates, widths, heights, and font sizes consumed by AdRenderer.tsx for DOM placement[cite: 1].
