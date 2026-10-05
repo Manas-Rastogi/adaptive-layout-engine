@@ -13,7 +13,7 @@ Iterative Downscaling: Evaluates elements through a scaling loop from 1.0 down t
 Grid Wrapping: Enforces automatic multi-row wrapping with explicit row limits (MAX_ITEMS_PER_ROW) on balanced and kiosk surfaces to prevent horizontal cramping and ensure consistent spacing (GAP = 16 standard, WIDE_GAP = 32 wide).
 ---------------------------------------------------
 Degradation Strategy
-
+---------------------------------------------------
 Graceful Hiding: If space runs out after exhausting scale steps, non-critical elements are marked as visible: false and pushed to warnings.
 Hard Failures: High-priority elements (priority <= 2) trigger an explicit layout error (success: false) if they cannot fit within safe bounds.
 Text Overflow Safeguards: Calculates a dynamic minimum width proportional to the font size (fontSize * 5) to guarantee that text strings never spill out of their bounding boxes during browser rendering.
