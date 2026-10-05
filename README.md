@@ -11,7 +11,7 @@ Mode Detection: Analyzes surface aspect ratio and height constraints to categori
 Sequence and Priority Control: Preserves the original element array sequence for wide surfaces (critical for broadcast lower-thirds to prevent arbitrary reordering) while sorting by priority for standard displays.
 Iterative Downscaling: Evaluates elements through a scaling loop from 1.0 down to 0.4 to find the largest fitting size without boundary collisions.
 Grid Wrapping: Enforces automatic multi-row wrapping with explicit row limits (MAX_ITEMS_PER_ROW) on balanced and kiosk surfaces to prevent horizontal cramping and ensure consistent spacing (GAP = 16 standard, WIDE_GAP = 32 wide).
-
+---------------------------------------------------
 Degradation Strategy
 
 Graceful Hiding: If space runs out after exhausting scale steps, non-critical elements are marked as visible: false and pushed to warnings.
