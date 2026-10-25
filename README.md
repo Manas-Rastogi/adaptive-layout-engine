@@ -20,7 +20,7 @@ Hard Failures: High-priority elements (priority <= 2) trigger an explicit layout
 Text Overflow Safeguards: Calculates a dynamic minimum width proportional to the font size (fontSize * 5) to guarantee that text strings never spill out of their bounding boxes during browser rendering.
 ---------------------------------------------------
 TypeScript Design
-
+---------------------------------------------------
 Implements strict typing using explicit interfaces (AdSpec, SurfaceProfile, ResolvedElement, AdElement)[cite: 1].
 Core layout computations are structured as pure, side-effect-free functions (getMode, getSize, generatePositions, tryPlace) ensuring clean component decoupling and predictable state rendering inside AdRenderer.tsx[cite: 1].
 
