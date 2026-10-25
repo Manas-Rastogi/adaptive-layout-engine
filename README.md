@@ -1,4 +1,4 @@
----------------------------------------------------
+ji---------------------------------------------------
 ---------------------------------------------------
 Architecture
 ---------------------------------------------------
@@ -18,7 +18,7 @@ Degradation Strategy
 Graceful Hiding: If space runs out after exhausting scale steps, non-critical elements are marked as visible: false and pushed to warnings.
 Hard Failures: High-priority elements (priority <= 2) trigger an explicit layout error (success: false) if they cannot fit within safe bounds.
 Text Overflow Safeguards: Calculates a dynamic minimum width proportional to the font size (fontSize * 5) to guarantee that text strings never spill out of their bounding boxes during browser rendering.
-
+---------------------------------------------------
 TypeScript Design
 
 Implements strict typing using explicit interfaces (AdSpec, SurfaceProfile, ResolvedElement, AdElement)[cite: 1].
