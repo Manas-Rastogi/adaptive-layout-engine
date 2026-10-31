@@ -23,7 +23,7 @@ TypeScript Design
 ---------------------------------------------------
 Implements strict typing using explicit interfaces (AdSpec, SurfaceProfile, ResolvedElement, AdElement)[cite: 1].
 Core layout computations are structured as pure, side-effect-free functions (getMode, getSize, generatePositions, tryPlace) ensuring clean component decoupling and predictable state rendering inside AdRenderer.tsx[cite: 1].
-
+---------------------------------------------------
 Limitations
 
 Relies on heuristic grid-wrapping and discrete downscaling steps rather than an advanced continuous constraint-satisfaction solver (like Cassowary).
