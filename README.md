@@ -28,7 +28,7 @@ Limitations
 ---------------------------------------------------
 Relies on heuristic grid-wrapping and discrete downscaling steps rather than an advanced continuous constraint-satisfaction solver (like Cassowary).
 Assumes static element aspect ratios during the initial placement pass.
-
+----------------------------------------------------/
 Time Spent
 
 Approximately 5 hours, split between designing the core resolution math, fixing broadcast lower-third alignment bugs, resolving text clipping issues, and tuning multi-row grid wrapping for square kiosk screens.
